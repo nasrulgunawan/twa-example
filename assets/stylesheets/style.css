@@ -1,0 +1,117 @@
+body {
+  background-color: rgba(101, 31, 255, .01);
+}
+
+.pt-16 {
+  padding-top: 16px;
+}
+
+.pb-32 {
+  padding-bottom: 32px;
+}
+
+.bottom-navigation {
+  position: fixed !important;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, .05);
+}
+
+.bottom-navigation .indicator {
+  display: none;
+}
+
+.bottom-navigation>.tab>a>.material-icons {
+  position: relative;
+  top: 15%;
+}
+
+.tabs .tab a {
+  color: #000 !important;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  color: #651fff !important;
+  background-color: #fff !important;
+}
+
+.card-panel {
+  box-shadow: 0 1px 20px rgba(0, 0, 0, .05) !important;
+  border-radius: 8px !important;
+}
+
+nav {
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: none !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.responsive-img {
+  height: 50px !important;
+}
+
+.content-middle {
+  display: flex;
+  align-items: center;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-slider {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-slider .card-panel {
+  width: max-content;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.card-slider .card-panel.active,
+.card-slider .card-panel:hover {
+  background-color: #651fff;
+  color: #fff;
+  transition: all .4s ease;
+  transform: translate3D(0, -1px, 0) scale(1.02);
+  box-shadow: 8px 28px 50px rgba(39, 44, 49, .07),
+    1px 6px 12px rgba(39, 44, 49, .04);
+}
+
+.card-panel:hover label {
+  color: #fff;
+}
+
+.search-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, .05) !important;
+  padding: 0 16px;
+  border-radius: 50px;
+}
+
+.search-field input[type=text] {
+  border: none !important;
+  margin: 0 !important;
+}
+
+.search-field input[type=text]:not(.browser-default):focus:not([readonly]) {
+  box-shadow: none;
+}

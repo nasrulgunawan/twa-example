@@ -1,0 +1,22 @@
+{
+    "name": "Football App",
+    "short_name": "Football App",
+    "description": "Football App TWA Example",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#651fff",
+    "icons": [
+        {
+            "src": "icon512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+          "src": "maskable_icon.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+    ]
+}
